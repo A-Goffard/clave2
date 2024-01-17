@@ -10,32 +10,10 @@
 
 <body>
 
-    <style>
-        .pushable {
-            background: #4B0082;
-            border-radius: 12px;
-            border: none;
-            padding: 0;
-            cursor: pointer;
-            outline-offset: 4px;
-          }
-          .front {
-            display: block;
-            padding: 12px 42px;
-            border-radius: 12px;
-            font-size: 1.25rem;
-            background: #9400D3;
-            color: white;
-            transform: translateY(-6px);
-          }
-        
-          .pushable:active .front {
-            transform: translateY(-2px);
-          }
-    </style>
+    
     <div>
         <div class="uno">
-            <audio src="/material/morse (1).wav" autoplay muted loop controls></audio>
+            <audio src="/material/morse.mp3" autoplay muted loop controls></audio>
         </div>
 
         <div>    
@@ -50,13 +28,6 @@
  
    
     <script type="text/javascript" src="/script.js"></script>
-    <script>
-        function testVibrate() {
-            document.getElementById("demo").innerHTML = "Does it vibrate? ";
-            window.navigator.vibrate([100, 100, 600, 100, 100,300, 300, 100, 
-        100, 100, 600, 100, 600,]);
-        }
-    </script>
     
 </body>
 </html>

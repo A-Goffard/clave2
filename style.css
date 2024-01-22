@@ -99,18 +99,38 @@ canvas{ position: relative;
 }
 
 @media screen and (max-width:800px)  {
-      .video  video{width: 59%;
+      .video{top: -18%;}
+      .video  video{width: 80%;
                     height: 50%;
                    }
-      .audio{left: 08%;
-              top: 78%;
+      .audio{left: 20%;
+              top: 58%;
               width: 60%;
             }
       .pushable {width: 45%;
                 left: 28%;
-                top: 5%;
+                top: 10%;
                 }
-      #info{top: 78%;
-            left: 75%;
+      #info{top: 70%;
+            left: 40%;
            }
+  }
+  @media screen and (max-height: 400px){
+    .video{top: -23%;
+          }
+    .video  video{width: 50%;
+                  height: 50%;
+                 }
+    .audio{left: 25%;
+            top: 55%;
+            width: 50%;
+          }
+    .pushable {width: 30%;
+              left: 29%;
+              top: 80%;
+              }
+    #info{top: 75%;
+          left: 60%;
+         }
+    
   }

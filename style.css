@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+}
+/*.contenido{width: 100%;
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+           border: 0.5rem solid green;
+          }  */
+
+canvas{ position: relative;
+        z-index: -10;
+      }
+
+.video{
+      position: absolute;
+       height: 100%;
+       width: 100%;
+       z-index: 0;
+       justify-content: center;
+       align-items: center;
+      /* border: 0.5rem solid green;*/
+       left: 0;
+       display: flex;
+       top: 0;
+       
+    }
+  .video video{height: 50%;
+               width: 50%;
+              }
+    .audio{position: absolute;
+           z-index: 4;
+           justify-content: center;
+           left: 42%;
+           top: 60%;
+          }
+
+    .pushable {width: 20%;
+        background: #4B0082;
+        border-radius: 12px;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        outline-offset: 4px;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top:17%;
+        left: 40%;
+      }
+      .front {
+        display: block;
+        padding: 12px 42px;
+        border-radius: 12px;
+        font-size: 1.25rem;
+        background: #9400D3;
+        color: white;
+        transform: translateY(-6px);
+      }
+    
+      .pushable:active .front {
+        transform: translateY(-2px);
+      }
+      #info{width:1.5%;
+        height: 1.5%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+            position: absolute;
+            background-color: blue;
+            color: white;
+            padding: 2rem 2rem;
+            border-radius: 100%;
+            left: 43%;
+            top: 88%;
+           }
+
+           input{
+            display: none;
+           }
+
+           label{
+            display: none;
+           }
+
+/* media query */
+
+@media screen and (max-width:1150px)  {
+  .audio{left:35%;}
+}
+
+@media screen and (max-width:800px)  {
+      .video  video{width: 59%;
+                    height: 50%;
+                   }
+      .audio{left: 08%;
+              top: 78%;
+              width: 60%;
+            }
+      .pushable {width: 45%;
+                left: 28%;
+                top: 5%;
+                }
+      #info{top: 78%;
+            left: 75%;
+           }
+  }

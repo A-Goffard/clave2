@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>matrix</title>
+    
+</head>
+
+<body>
+        
+    
+    
+        <div class="video">
+            <video src="/material/morse.mp4" autoplay loop muted controls></video>
+        </div>
+
+        <div>    
+            <button class="pushable" onclick="testVibrate()"><span class="front">Vibracion</span></button>
+        </div>
+        <div>    
+            <audio class="audio" src="/material/morse.mp3"  muted controls></audio>
+            <p id="demo"> </p>
+        </div>
+        <div>
+            <!--<button id="info">Info</button>-->
+            <button id="info" onclick="copiar()" value="otra pueba">Copiar texto</button>
+            <input type="text" value=". .-. . ... / . .-.. / ..-. ..- - ..- .-. --- / -.. . / .-.. .- / .--. .-. --- --. .-. .- -- .- -.-. .. --- -." id="target1" readonly>
+            <br>
+            <label>Texto copiado (Ctrl + V)</label>
+            <input type="text" id="target2">
+            <br>
+        </div>
+    
+    <canvas>  
+
+    </canvas>
+ 
+   
+    <script type="text/javascript" src="/script.js"></script>
+    
+</body>
+</html>
+
